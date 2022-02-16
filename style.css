@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: rgb(194, 241, 226);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+.image{
+    height: 300px;
+    width: 300px;
+    background-image: url(./img/gif_foto.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 1em;
+}
+
+img{
+    height: 300px;
+}
+.image:hover{
+    background-image: url(./img/giphy.gif);
+}
+
+div{
+    padding: 0.5em;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+span{
+    margin:1em;
+}
+
+.scores input{
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    font-size: 20px;
+    border-color: limegreen;
+    box-shadow: 5px 10px 8px #888888;
+    outline: none;
+}
+
+label{
+font-size: 25px;
+margin: 1em;
+font-weight: 900;
+}
+
+.buttons{
+    position: fixed;
+    bottom: 0;
+}
+
+#btnPlayer1{
+    height: 3em;
+    width: 10em;
+    background-color: rgb(240, 164, 23);
+    color: white;
+    box-shadow: 5px 10px 8px #888888;
+    border-color: rgb(240, 164, 23);
+    cursor: pointer;
+}
+
+#btnPlayer2{
+    height: 3em;
+    width: 10em;
+    background-color: rgb(50, 152, 216);
+    color: white;
+    border-color: rgb(50, 152, 216);
+    box-shadow: 5px 10px 8px #888888;
+    cursor: pointer;
+}
+
+#btnReset{
+    height: 3em;
+    width: 10em;
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+    box-shadow: 5px 10px 8px #888888;
+    cursor: pointer;
+}

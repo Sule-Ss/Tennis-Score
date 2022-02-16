@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/ball.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="image">
+        </div>
+        <div>
+            <h1>Scores</h1>
+            <h1><span class="spanPlayer1">0</span> to <span class="spanPlayer2">0</span></h1>
+        </div>
+        <div class="scores">
+            <label for="winScore">Score to Win</label>
+            <input type="number" name="winScore" id="winScore" min="1" max="10" value="5">
+        </div>
+
+        <div class="buttons">
+            <button id="btnPlayer1">+ 1 for Player 1</button>
+            <button id="btnPlayer2">+ 1 for Player 2</button>
+            <button id="btnReset" type="reset">RESET</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -35,7 +35,7 @@ btn2.addEventListener("click", (e) => {
   if (spanP2.innerHTML == 5) {
     image.style.backgroundImage = "url(./img/wingiphy.gif)";
     image.style.width = "35em";
-    text.innerHTML = "WINNER : PLAYER 1 !";
+    text.innerHTML = "WINNER : PLAYER 2 !";
     text.style.color = "green";
     spanP1.style.color = "red";
     spanP2.style.color = "green";
@@ -46,8 +46,4 @@ btn2.addEventListener("click", (e) => {
   }
 });
 
-btnReset.addEventListener("click", reset);
-
-function reset() {
-  location.reload();
-}
+btnReset.addEventListener("click", ()=>{location.reload();});

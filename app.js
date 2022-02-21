@@ -8,12 +8,15 @@ const inputScore = document.getElementById("winScore");
 const image = document.querySelector(".image");
 const text = document.querySelector("h1");
 
-if (inputScore.value > 10 || inputScore.value < 1) {
-  alert("Score to Win: must be between 1 and 10");
-}
-
 btn1.addEventListener("click", (e) => {
   e.preventDefault();
+
+  if (inputScore.value > 10 || inputScore.value < 1) {
+    alert("Score to Win: must be between 1 and 10");
+    inputScore.value = "5";
+    return;
+  }
+  
   spanP1.innerHTML++;
   if (spanP1.innerHTML == inputScore.value) {
     image.style.backgroundImage = "url(./img/wingiphy.gif)";
@@ -31,6 +34,13 @@ btn1.addEventListener("click", (e) => {
 
 btn2.addEventListener("click", (e) => {
   e.preventDefault();
+
+  if (inputScore.value > 10 || inputScore.value < 1) {
+    alert("Score to Win: must be between 1 and 10");
+    inputScore.value = "5";
+    return;
+  }
+  
   spanP2.innerHTML++;
   if (spanP2.innerHTML == 5) {
     image.style.backgroundImage = "url(./img/wingiphy.gif)";

@@ -42,7 +42,7 @@ btn2.addEventListener("click", (e) => {
   }
   
   spanP2.innerHTML++;
-  if (spanP2.innerHTML == 5) {
+  if (spanP2.innerHTML == inputScore.value) {
     image.style.backgroundImage = "url(./img/wingiphy.gif)";
     image.style.width = "35em";
     text.innerHTML = "WINNER : PLAYER 2 !";

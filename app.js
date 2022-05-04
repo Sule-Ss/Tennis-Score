@@ -8,6 +8,8 @@ const inputScore = document.getElementById("winScore");
 const image = document.querySelector(".image");
 const text = document.querySelector("h1");
 
+inputScore.focus();
+
 btn1.addEventListener("click", (e) => {
   e.preventDefault();
 
